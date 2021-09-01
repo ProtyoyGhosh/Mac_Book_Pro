@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- linking boostrap css............. -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>Mac Book Pro</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="container">
+                <div class="row d-flex justify-content-evenly align-items-center">
+                    <div class=" col-6 col-sm-4 ">
+                        <!-- adding image.............. -->
+                        <img class=" img-fluid d-flex align-items-center justify-content-center mt-5"
+                            src="images/mac.png">
+                    </div>
+                    <div class="col-6 col-sm-4">
+                        <!-- adding top text area ...........-->
+                        <div class="ms-3">
+                            <h1>
+                                Customize your Blue 24-inch iMac with Apple M1 chip
+                            </h1>
+                            <h5>
+                                Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency.Apple M1 chip
+                                with 8-core CPU with 4 performance cores and 4 efficiency.Apple M1 chip with 8-core CPU
+                                with 4 performance cores and 4 efficiency.
+                            </h5>
+                        </div>
+                        <div class="mt-5">
+                            <div class="mt-5">
+                                <!-- memory part .........-->
+                                <h5>Memory</h3>
+                                    <div class="row g-3">
+                                        <div class="col">
+                                            <button id="initial-memory">8Gb unified memory</button>
+                                        </div>
+                                        <div class="col">
+                                            <button id="extra-memory">16Gb unified memory</button>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="mt-5">
+                                <!-- storage part ...........-->
+                                <h5>Storage</h3>
+                                    <div class="row g-3">
+                                        <div class="col">
+                                            <button id="primary-storage">256GB SSD storage</button>
+                                        </div>
+                                        <div class="col">
+                                            <button id="secondary-storage">512GB SSD storage</button>
+                                        </div>
+                                        <div class="col">
+                                            <button id="higher-storage">1TB SSD storage</button>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="mt-5">
+                                <!-- dilevery part ...........-->
+                                <h5>Choose your dilevery option</h3>
+                                    <div class="row g-3">
+                                        <div class="col">
+                                            <button id="no-delivery-cost">Friday,August 25,free delivery <span
+                                                    class="d-none">0</span></button>
+                                        </div>
+                                        <div class="col">
+                                            <button id="pay-delivery-cost">Monday,August 21,delivery charge
+                                                $<span>20</span></button>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+
+                        <!-- sub-total part .......-->
+                        <div class="cart-item mt-5">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <h5>Best Price: </h5>
+                                    <h5>Extra Memory Cost:</h5>
+                                    <h5>Extra Storage Cost:</h5>
+                                    <h5>Delivery charge:</h5>
+                                </div>
+                                <div class="col-md-4 status">
+                                    <h5>$<span id="best-price">1299</span></h5>
+                                    <h5>$<span id="extra-memory-cost">0</span></h5>
+                                    <h5>$<span id="extra-storage-cost">0</span></h5>
+                                    <h5>$<span id="delivery-charge-cost">0</span></h5>
+                                </div>
+                                <hr>
+                                <div class="col-md-8">
+                                    <h5>Total Price:</h5>
+                                </div>
+                                <div class="col-md-4 status">
+                                    <h5>$<span id="sub-total-price">0</span></h5>
+                                </div>
+
+                                <!-- promo code part........-->
+                                <div class="row mt-5">
+                                    <div class="col-md-8">
+                                        <h5>Apply promo code</h5>
+                                        <input id="coupon-input" type="text" placeholder="Enter your Promo Code">
+                                    </div>
+                                    <div class="col-md-4 status">
+                                        <div class="col-md-12 pt-4 pb-4">
+                                            <button id="coupon-submit" type="button"
+                                                class="btn btn-danger check-out">Check Out</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <hr>
+            <!-- final price part.......... -->
+            <div class="d-flex justify-content-center m-5">
+                <h1>Total:$<span id="final-price">1299</span></h3>
+            </div>
+        </section>
+    </main>
+
+    <!-- linking script file........ -->
+    <script src="script.js"></script>
+</body>
+
+</html>
